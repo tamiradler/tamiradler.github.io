@@ -1,8 +1,9 @@
 body {
-    background: powderblue;
+    //background: powderblue;
     font-size: 100%;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875em;
 }
