@@ -8,7 +8,7 @@
     <body>
         <p>Hello World</p>
         <p>תמיר אדלר</p>
-        <button type="button" onclick="loadDoc()">Request data</button>
+        <button type="button" onclick="loadDoc()">Sen</button>
         <p id="demo"></p>
         <script>
             function loadDoc() {
@@ -18,7 +18,7 @@
                         document.getElementById("demo").innerHTML = this.responseText;
                     }
                 };
-                xhttp.open("GET", "demo_get.asp", true);
+                xhttp.open("GET", "https://script.google.com/macros/s/AKfycbxWJgCP0uIg5AgVxORyPWbZw4p7IJotc1aIcIdNFFqjmzIpUog/exec?fun=getSenagogs", true);
                 xhttp.send();
             }
         </script>
