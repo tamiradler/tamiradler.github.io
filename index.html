@@ -4,12 +4,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tamir Adler</title>
         <link rel="stylesheet" href="styles.css?version=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     </head>
-    <body>
+    <body ng-app="navApp">
         <p>Hello World</p>
         <p>תמיר אדלר</p>
         <button type="button" onclick="loadDoc()">Sen</button>
         <p id="demo"></p>
+        <w3-test-directive></w3-test-directive>
         <script>
             function loadDoc() {
                 var xhttp = new XMLHttpRequest();
@@ -22,5 +24,7 @@
                 xhttp.send();
             }
         </script>
+		<script src="nav\nav-module.js"></script>
+        <script src="nav\nav-directive.js"></script>
     </body>
 </html>

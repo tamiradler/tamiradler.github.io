@@ -1,4 +1,4 @@
-cd C:\oms\RetailAPISimulator\src\screens
+cd C:\oms\RetailAPISimulator\tamiradler
 
 python serveit.py 8234
 
