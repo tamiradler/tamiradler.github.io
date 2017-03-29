@@ -11,7 +11,7 @@
         <p>תמיר אדלר</p>
         <button type="button" onclick="loadDoc()">Sen</button>
         <p id="demo"></p>
-        <w3-test-directive></w3-test-directive>
+        <nav-dir ng-controller="navCont"></nav-dir>
         <script>
             function loadDoc() {
                 var xhttp = new XMLHttpRequest();
@@ -25,6 +25,7 @@
             }
         </script>
 		<script src="nav\nav-module.js"></script>
+        <script src="nav\nav-controller.js"></script>
         <script src="nav\nav-directive.js"></script>
     </body>
 </html>

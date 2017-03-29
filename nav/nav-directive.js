@@ -1,5 +1,5 @@
-angular.module("navApp").directive("w3TestDirective", function() {
+angular.module("navApp").directive("navDir", function() {
     return {
-        template : "<h1>Made by a directive!</h1>"
+        templateUrl: 'nav/nav.html'
     };
 });
