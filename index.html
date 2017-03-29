@@ -3,29 +3,24 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tamir Adler</title>
-        <link rel="stylesheet" href="styles.css?version=1">
+        <link rel="stylesheet" href="styles.css?version=2">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     </head>
     <body ng-app="navApp">
-        <p>Hello World</p>
-        <p>תמיר אדלר</p>
-        <button type="button" onclick="loadDoc()">Sen</button>
-        <p id="demo"></p>
+
         <nav-dir ng-controller="navCont"></nav-dir>
-        <script>
-            function loadDoc() {
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        document.getElementById("demo").innerHTML = this.responseText;
-                    }
-                };
-                xhttp.open("GET", "https://script.google.com/macros/s/AKfycbxWJgCP0uIg5AgVxORyPWbZw4p7IJotc1aIcIdNFFqjmzIpUog/exec?fun=getSenagogs", true);
-                xhttp.send();
-            }
-        </script>
-		<script src="nav\nav-module.js"></script>
-        <script src="nav\nav-controller.js"></script>
-        <script src="nav\nav-directive.js"></script>
+
+        <div style="margin-left:25%;padding:1px 16px;">
+            <p>Hello World</p>
+            <p>תמיר אדלר</p>
+            <button type="button" onclick="loadDoc()">Sen</button>
+            <p id="demo"></p>
+        </div>
+        
+
+        <script src="script.js"></script>
+		<script src="nav/nav-module.js"></script>
+        <script src="nav/nav-controller.js"></script>
+        <script src="nav/nav-directive.js"></script>
     </body>
 </html>
