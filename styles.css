@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: powderblue;
     font-size: 100%;
     margin: 0;
+    max-width: 100%;
 }
 
 p {
@@ -31,3 +36,5 @@ ol.nav li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
+
+
