@@ -1,0 +1,70 @@
+<div>  
+  <div class="add_senagog">
+    <div class="senagog_details">
+      <label>{{$ctrl.data.senagog_name}}</label>
+      <label ng-if="$ctrl.senagog.alertSenagogName" style="color: red">{{$ctrl.data.plz_fill_senagog_name}}</label>
+      <input type="text" ng-model="$ctrl.senagog.senagogName">
+
+      <label>{{$ctrl.data.address}}</label>
+      <label ng-if="$ctrl.senagog.alertAddress" style="color: red">{{$ctrl.data.plz_fill_address}}</label>
+      <div>
+        <input type="text" ng-model="$ctrl.senagog.address">
+        <a class="button" id="checkAddressBtn">{{$ctrl.data.check_address}}</a>
+        <span style="color: green" title="{{$ctrl.data.address_checked}}" ng-if="!$ctrl.senagog.alertCoordinate">&#10004;</span>
+        <span style="color: red" title="{{$ctrl.data.plz_check_address}}" ng-if="$ctrl.senagog.alertCoordinate">&#10006;</span>
+      </div>
+
+      <label class="label_inline">{{$ctrl.data.nosach}}</label>
+      <select id="country" ng-change="nosachCaptionChange($ctrl.senagog)" ng-model="$ctrl.senagog.nosachCaption">
+        <option ng-repeat="nosach in $ctrl.data.nosach_types">{{nosach.caption}}</option>
+      </select>
+    </div>
+    <div class="minyan_details">
+      <ul style="list-style-type:none;margin: 0;padding: 0">
+        <li ng-repeat="minyan in $ctrl.senagog.minyans track by $index">
+          <div class="minyan">
+              <a class = "close" ng-click="removeMinyan($index)">&times;</a>
+              <select ng-model="minyan.typeCaption" ng-change="typeCaptionChange(minyan)">
+                  <option ng-repeat="minyan_type in $ctrl.data.minyan_types">{{minyan_type.caption}}</option>
+              </select>
+
+              <select ng-model="minyan.dayAtWeekCaption" ng-change="dayAtWeekCaptionChange(minyan)">
+                  <option ng-repeat="day_type in $ctrl.data.days_types">{{day_type.caption}}</option>
+              </select>
+
+              <select ng-model="minyan.fixedNotFixedType" ng-change="fixedNotFixedTypeChanged(minyan)">
+                  <option ng-repeat="type in $ctrl.data.fixed_not_fixed_type">{{type.caption}}</option>
+              </select>
+              
+              <input id="fixed_tyme" ng-model="minyan.timeNotFormated" ng-change="timeChange(minyan)" ng-if="!minyan.isFixedTime" type="time">
+
+              <input id="dakot_lifney_achrey" type="number" ng-if="minyan.isFixedTime" ng-model="minyan.dakotLifneyAcharey" ng-change="dakotLifneyAchareyChange(minyan)">
+              <label ng-if="minyan.isFixedTime">{{$ctrl.data.minutes}}</label>
+              <select ng-if="minyan.isFixedTime" ng-model="minyan.isDakotLifneyAsString" ng-change="isDakotLifneyAsStringChange(minyan)">
+                  <option ng-repeat="before_after in $ctrl.data.before_after">{{before_after.caption}}</option>
+              </select>
+              <select ng-if="minyan.isFixedTime" ng-model="minyan.dayTimeCaption" ng-change="dayTimeCaptionChange(minyan)">
+                  <option ng-repeat="time_type in $ctrl.data.time_types">{{time_type.caption}}</option>
+              </select>
+          </div>
+        </li>
+      </ul>
+      <a class="button" ng-click="addMinyan()">{{$ctrl.data.add_minyan}}</a>  
+    </div>
+    <a class="button button-big" ng-click="submit()">{{$ctrl.data.submit}}</a>
+    
+  </div>
+
+  <!--check address-->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>{{$ctrl.data.check_address_text}}</p>
+      <div id="check_address_map"></div>
+      <div>
+          <a class="button" ng-click="setCoordinant()">{{$ctrl.data.ok}}</a>
+          <a class="button" ng-click="resetAddress()">{{$ctrl.data.reset}}</a>
+      </div>
+    </div>
+  </div>
+</div>

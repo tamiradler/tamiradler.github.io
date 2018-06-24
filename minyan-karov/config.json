@@ -1,0 +1,106 @@
+{
+	"time_types":[
+		{
+			"code":"alot_hashahar","caption":"עלות השחר"
+		},
+		{
+			"code":"hanetz","caption":"הנץ"
+		},
+		{
+			"code":"tzet_hakohavim","caption":"צאת הכוכבים"
+		},
+		{
+			"code":"zriha","caption":"זריחה"
+		},
+		{
+			"code":"shkiaa","caption":"שקיעה"
+		},
+		{
+			"code":"noon","caption":"חצות היום"
+		}
+	],
+	"add_minyan":"הוסף מניין",
+	"check_address":"בדוק כתובת",
+	"zmanim":"זמנים",
+	"show_map":"מפת בתי הכנסת",
+	"more_information":"למידע נוסף",
+	"next_minyan":"המניין הבא:",
+	"minyan_types": [
+		{
+			"code":"SH","caption":"שחרית"
+		},
+		{
+			"code":"MI","caption":"מנחה"
+		},
+		{
+			"code":"AR","caption":"ערבית"
+		}
+	],
+	"at":"ב-",
+	"add_senagog":"הוספת בית כנסת",
+	"senagog_name":"שם בית הכנסת",
+	"address":"כתובת",
+	"nosach":"נוסח",
+	"nosach_types":[
+		{
+			"code":"nosach_achid","caption":"נוסח אחיד"
+		},
+		{
+			"code":"edot_hamizrach","caption":"עדות המזרח"
+		},
+		{
+			"code":"ashkenaz","caption":"אשכנז"
+		}
+	],
+	"submit":"שלח",
+	"days_types":[
+		{
+			"code":"hol_days_str","caption":"ימות החול"
+		},
+		{
+			"code":"every_day_str","caption":"כל יום"
+		},
+		{
+			"code":"every_day_beside_friday_and_str_str","caption":"כל יום חוץ משישי שבת"
+		},
+		{
+			"code":"a_c_d_f_days_str","caption":"ימים א, ג, ד, ו"
+		},
+		{
+			"code":"a_c_d_days_str","caption":"ימים א, ג, ד"
+		},
+		{
+			"code":"shabat_str","caption":"יום שבת"
+		},
+		{
+			"code":"f_str","caption":"יום שישי"
+		},		
+		{
+			"code":"b_e_days_str","caption":"שני וחמישי"
+		}
+	],
+	"minutes":"דקות",
+	"fixed_not_fixed_type":[
+		{
+			"code":"not_fixed_type","caption":"בשעה קבועה"
+		},
+		{
+			"code":"fixed_type","caption":"בזמן קבוע"
+		}
+	],
+	"before_after":[
+		{
+			"code":"before","caption":"לפני"
+		},
+		{
+			"code":"after","caption":"אחרי"
+		}
+	],
+	"ok":"אישור",
+	"reset":"איפוס",
+	"check_address_text":"האם בית הכנסת נמצא כאן?",
+	"plz_fill_address":"אנא מלא כתובת",
+	"plz_fill_senagog_name":"אנא מלא שם בית הכנסת",
+	"plz_check_address":"אנא בדוק את הכתובת",
+	"address_checked":"כתובת נבדקה"
+}

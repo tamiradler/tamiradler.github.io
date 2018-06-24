@@ -1,0 +1,45 @@
+<html dir="rtl">
+    <head>
+	<meta charset="utf-8" />
+        <title>מניין קרוב</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="keywords" content="בתי כנסת, בית כנסת, לוח זמנים, לוחות זמנים, מניין, מניינים, זמני היום, זמני תפילות, תפילה, תפילות" />
+    	<meta name="description" content="מניין קרוב - לוחות זמנים של מניינים הנמצאים קרוב אליכם, זמני היום ועוד." />
+    
+
+        <link rel="stylesheet" href="styles.css?version=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+        <script src="utils.js"></script>
+        <script src="add-senagog/add-senagog.module.js"></script>
+        <script src="add-senagog/add-senagog.component.js"></script>
+
+        <script src="zmanim/zmanim.js"></script>
+        <script src="zmanim/zmanim.module.js"></script>
+        <script src="zmanim/zmanim.component.js"></script>
+
+        <script src="senagog-map/senagog-map.module.js"></script>
+        <script src="senagog-map/senagog-map.component.js"></script>
+        
+        <script src="side-nav/side-nav.module.js"></script>
+        <script src="side-nav/side-nav.component.js"></script>
+
+        <script src="app/app.module.js"></script>
+        <script src="app/app.config.js"></script>
+        <script src="app/app.factory.js"></script>
+        
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNkCSJTzOdI0sL_BDcz3YA4Low5H5ZT-s"></script>
+
+        
+    </head>
+    <body ng-app="myApp">
+        
+        
+        <side-nav></side-nav>
+        <div ng-view></div>
+
+        
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<body>
+    <div class="container">
+        <div style="display:inline-block;cursor:pointer" onclick="openCloseToggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="title">{{$ctrl.fact.siteTitle}}</div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <!--a onclick="closeNav()" href="#/!">Main</a-->
+        <!--a onclick="closeNav()" href="#!red">Red</a-->
+        <!--a onclick="closeNav()" href="#!green">Green</a-->
+        <a onclick="closeNav()" href="#!map">{{$ctrl.data.show_map}}</a>
+        <a onclick="closeNav()" href="#!zmanim">{{$ctrl.data.zmanim}}</a>
+        <a onclick="closeNav()" href="#!add-senagog">{{$ctrl.data.add_senagog}}</a>
+        <!--a onclick="closeNav()" href="#!/blue/3/ch/4">Blue</a-->
+    </div>
+</body>
